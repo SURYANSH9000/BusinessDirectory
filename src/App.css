@@ -1,0 +1,270 @@
+/* App.css */
+
+.App {
+  background-image: url('../src/images/bg.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Place content below the header */
+}
+
+.login-container {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 70%;
+  margin: 20px auto;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.login-section {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  text-align: center;
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.business-directory {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.page-content {
+  margin-top: 100px;
+}
+
+.register-link {
+  margin-top: 10px;
+}
+
+.login-heading {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.register-button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-button,
+.register-button {
+  margin-top: 10px;
+}
+
+.side-navbar {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  transition: left 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.hamburger-icon {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 80px 40px;
+  margin: 0;
+}
+
+nav li {
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.side-navbar.show {
+  left: 0;
+}
+
+.side-navbar nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.side-navbar nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.search-inputs {
+  display: flex;
+  align-items: center;
+}
+
+.search-inputs input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.separator {
+  height: 20px;
+  width: 1px;
+  background-color: #ccc;
+  margin: 0 20px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 13px;
+}
+
+.business-listing {
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+.business-listing h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.business-listing-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.business-listing-item h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.business-list {
+  padding: 20px;
+  background-color:  burlywood;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+.business-list h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.business-cards-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.business-cards-column {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.no-results-message {
+  color: white;
+  text-align: right;
+  margin-right: 20px;
+}
+
+.business-link {
+  color: white; /* Change the text color to white */
+  text-decoration: none; /* Remove the underline */
+}
